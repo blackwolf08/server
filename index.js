@@ -34,6 +34,9 @@ app.get('api/messages', loginRequired, async function(req, res, next) {
     }
 })
 
+app.get('/', (req,res) => {
+    res.send("HEllo");
+})
 
 
 //Not found route
